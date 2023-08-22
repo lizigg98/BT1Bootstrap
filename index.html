@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "c c c i"
+    "d d d d"
+    "n n n n"
+    "e e e e"
+    "g g g g"
+    ;
+
+    grid-template-rows: 72px 52px 32px 40px 40px 40px auto;
+    background-color: #333;
+    color: #fff;
+}
+.sidebar h2 {
+    grid-area: a;
+}
+
+.sidebar p {
+    grid-area: b;
+}
+
+.sidebar input {
+    grid-area: c;
+}
+
+.sidebar i {
+    grid-area: i;
+}
+
+.sidebar button {
+    grid-area: d;
+}
+
+.sidebar .list {
+    grid-area: e;
+}
+
+.sidebar .gap {
+    grid-area: g;
+}
+
+.sidebar .new {
+    grid-area: n;
+}
+
+.sidebar h2 {
+    margin-right: -12px;
+    border: 1px solid #595252;
+}
+
+.sidebar img {
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.sidebar p img {
+    margin-left: 12px;
+}
+
+.sidebar #search {
+    border: none;
+    position: relative;
+    width: 221px;
+}
+
+.sidebar .search {
+    top: 124px;
+    left: 196px;
+    border: 1px solid #ccc;
+    padding: 8px 8px 6px 8px;
+    color: #000;
+    position: absolute;
+}
+
+.sidebar .search:hover {
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+}
+
+.sidebar button .chart {
+    max-width: 221px;
+}
+
+.sidebar select {
+    border: none;
+    background-color: #f5f5f5;
+}
+
+.sidebar select:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.sidebar .list {
+    padding-left: 32px;
+}
+
+.sidebar .new {
+    padding-left: 24px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+   <div class="row">
+
+    <div class="sidebar col-2">
+      <h2><img src="https://play-lh.googleusercontent.com/P0QkMWnVe00FSXsSc2OzkHKqGB9JTMm4sur4XRkBBkFEtO7MEQgoxO6s92LHnJcvdgc" alt="" style="width: 40px; height: 40px;">Admin</h2></li>
+      <p><img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000" alt="" style="width: 40px; width: 40px;">User</li></p>
+      <input id="search" class="ms-2" type="text" placeholder="   search">
+      <i class="search ti-search"></i>
+      <button class="ms-2 mt-2"><i class="chart ti-pie-chart">   Quản lí sản phẩm</i>
+          <select name="" id=""></select>
+      </button>
+      <a class="new mt-2 ms-2"><input class="news" type="radio"> Thêm mới</a>
+      <a class="list mt-2"><input class="circle" type="radio"> Danh sách</a>
+      <div class="gap">
+
+      </div>
+  </div>
+
+  
+      <div class="col-12 col-md-10 article">
+        <div class="row">
+  
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Đăng xuất</a>
+                   </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+            <div class="col-12 col-md-12">
+                <h2 class="mt-4 mb-4">Trang chủ</h2>
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="row">
+                    <div class="col-12 col-md-3 ">
+                      <div class="card bg-secondary" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-md-3">
+                      <div class="card bg-success" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+  
+                    <div class="col-12 col-md-3">
+                      <div class="card bg-warning" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="card bg-info" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
